@@ -8,5 +8,5 @@ Run tests using Docker:
 
 ```bash
 docker run -t postman/newman_ubuntu1404 \
-  --url="https://github.com/bmamlin/openmrs-contrib-postman-collections/platform-2.0-tests.postman_collection"
+  --url="https://raw.githubusercontent.com/bmamlin/openmrs-contrib-postman-collections/master/platform-2.0-tests.postman_collection"
 ```
