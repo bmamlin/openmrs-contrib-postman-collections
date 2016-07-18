@@ -1,36 +1,35 @@
 {
-	"id": "0bf802ca-fb57-e014-8a22-7c14520ecdb4",
+	"id": "77169bff-db8e-fb8b-461f-a6f1ce8f74f6",
 	"name": "Platform-2.0-tests",
 	"description": "REST tests for Platform 2.0",
 	"order": [
-		"f6123388-c92c-d3d5-5505-4871f1dcd584"
+		"08c30c96-9174-5e91-9110-2aa6a2fc521d"
 	],
 	"folders": [],
 	"timestamp": 1468854521972,
 	"owner": 0,
-	"remoteLink": "",
 	"public": false,
 	"published": false,
+	"hasRequests": true,
 	"requests": [
 		{
-			"id": "f6123388-c92c-d3d5-5505-4871f1dcd584",
+			"id": "08c30c96-9174-5e91-9110-2aa6a2fc521d",
 			"headers": "Authorization: Basic YWRtaW46QWRtaW4xMjM=\n",
 			"url": "http://uat-platform.openmrs.org:8080/openmrs/ws/rest/v1/concept?q=anemia",
-			"pathVariables": {},
 			"preRequestScript": null,
+			"pathVariables": {},
 			"method": "GET",
-			"collectionId": "0bf802ca-fb57-e014-8a22-7c14520ecdb4",
 			"data": null,
 			"dataMode": "params",
+			"version": 2,
+			"tests": "tests[\"Body matches string\"] = responseBody.has(\"121629AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\");",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1468860704826,
 			"name": "http://uat-platform.openmrs.org:8080/openmrs/ws/rest/v1/concept?q=anemia",
 			"description": "Search for a concept",
-			"descriptionFormat": "html",
-			"time": 1468854696482,
-			"version": 2,
-			"responses": [],
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {}
+			"collectionId": "77169bff-db8e-fb8b-461f-a6f1ce8f74f6",
+			"responses": []
 		}
 	]
 }
