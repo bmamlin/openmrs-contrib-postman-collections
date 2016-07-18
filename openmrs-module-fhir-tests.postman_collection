@@ -1,0 +1,111 @@
+{
+	"variables": [],
+	"info": {
+		"name": "openmrs-module-fhir-tests",
+		"_postman_id": "01cf4641-c71a-2992-edb8-a0a3f5e12169",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Patient GET",
+			"request": {
+				"url": "http://uat01.openmrs.org:8080/openmrs/ws/fhir/Patient/86419a11-7955-4a53-b75f-1fdf13b372dd",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic YWRtaW46QWRtaW4xMjM=",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json+fhir",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"resourceType\": \"Patient\",\n  \"id\": \"example\",\n  \"identifier\": [\n    {\n      \"use\": \"usual\",\n      \"label\": \"MRN\",\n      \"system\": \"urn:oid:1.2.36.146.595.217.0.1\",\n      \"value\": \"12345\",\n      \"period\": {\n        \"start\": \"2001-05-06\"\n      },\n      \"assigner\": {\n        \"display\": \"Acme Healthcare\"\n      }\n    }\n  ],\n  \"name\": [\n    {\n      \"use\": \"official\",\n      \"family\": [\n        \"Chalmers\"\n      ],\n      \"given\": [\n        \"Peter\",\n        \"James\"\n      ]\n    },\n    {\n      \"use\": \"usual\",\n      \"given\": [\n        \"Jim\"\n      ]\n    }\n  ],\n  \"telecom\": [\n    {\n      \"use\": \"home\"\n    },\n    {\n      \"system\": \"phone\",\n      \"value\": \"(03) 5555 6473\",\n      \"use\": \"work\"\n    }\n  ],\n  \"gender\": \"male\",\n  \"birthDate\": \"1974-12-25\",\n  \"deceasedBoolean\": false,\n  \"address\": [\n    {\n      \"use\": \"home\",\n      \"line\": [\n        \"534 Erewhon St\"\n      ],\n      \"city\": \"PleasantVille\",\n      \"state\": \"Vic\",\n      \"postalCode\": \"3999\"\n    }\n  ],\n  \"active\": true\n}"
+				},
+				"description": "GET Patient"
+			},
+			"response": []
+		},
+		{
+			"name": "Patient POST",
+			"request": {
+				"url": "http://uat01.openmrs.org:8080/openmrs/ws/fhir/Patient",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic YWRtaW46QWRtaW4xMjM=",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json+fhir",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"resourceType\": \"Patient\",\n  \"identifier\": [\n    {\n      \"use\": \"usual\",\n      \"system\": \"OpenMRS ID\",\n      \"value\": \"1000F0\"\n    }\n  ],\n  \"name\": [\n    {\n      \"use\": \"usual\",\n      \"family\": [\n        \"Sharma\"\n      ],\n      \"given\": [\n        \"Mayank\"\n      ]\n    }\n  ],\n  \"gender\": \"male\",\n  \"birthDate\": \"1950-01-01\",\n  \"deceasedBoolean\": false,\n  \"address\": [\n    {\n      \"use\": \"home\",\n      \"line\": [\n        \"55\"\n      ]\n    }\n  ],\n  \"active\": true\n}"
+				},
+				"description": "Create Patient"
+			},
+			"response": []
+		},
+		{
+			"name": "Patient PUT",
+			"request": {
+				"url": "http://uat01.openmrs.org:8080/openmrs/ws/fhir/Patient/86419a11-7955-4a53-b75f-1fdf13b372dd",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic YWRtaW46QWRtaW4xMjM=",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json+fhir",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"resourceType\": \"Patient\",\n  \"id\": \"86419a11-7955-4a53-b75f-1fdf13b372dd\",\n  \"identifier\": [\n    {\n      \"use\": \"usual\",\n      \"system\": \"OpenMRS ID\",\n      \"value\": \"1000F0\"\n    }\n  ],\n  \"name\": [\n    {\n      \"use\": \"usual\",\n      \"family\": [\n        \"Jane\"\n      ],\n      \"given\": [\n        \"Mary\"\n      ]\n    }\n  ],\n  \"gender\": \"male\",\n  \"birthDate\": \"1950-01-01\",\n  \"deceasedBoolean\": false,\n  \"address\": [\n    {\n      \"use\": \"home\",\n      \"line\": [\n        \"55\"\n      ]\n    }\n  ],\n  \"active\": true\n}"
+				},
+				"description": "Update Patient"
+			},
+			"response": []
+		},
+		{
+			"name": "Person POST",
+			"request": {
+				"url": "http://uat01.openmrs.org:8080/openmrs/ws/fhir/Person",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic YWRtaW46QWRtaW4xMjM=",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json+fhir",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"resourceType\": \"Person\",\n   \"name\": [\n    {\n      \"use\": \"official\",\n      \"family\": [\n        \"Chalmers\"\n      ],\n      \"given\": [\n        \"Peter\",\n        \"James\"\n      ]\n    },\n    {\n      \"use\": \"usual\",\n      \"given\": [\n        \"Jim\"\n      ]\n    }\n  ],\n  \"gender\": \"male\",\n  \"birthDate\": \"1974-12-25\",\n  \"address\": [\n    {\n      \"use\": \"home\",\n      \"line\": [\n        \"534 Erewhon St\"\n      ],\n      \"city\": \"PleasantVille\",\n      \"state\": \"Vic\",\n      \"postalCode\": \"3999\"\n    }\n  ],\n  \"active\": true\n}"
+				},
+				"description": "Create Person"
+			},
+			"response": []
+		}
+	]
+}

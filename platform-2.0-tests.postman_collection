@@ -1,0 +1,36 @@
+{
+	"id": "0bf802ca-fb57-e014-8a22-7c14520ecdb4",
+	"name": "Platform-2.0-tests",
+	"description": "REST tests for Platform 2.0",
+	"order": [
+		"f6123388-c92c-d3d5-5505-4871f1dcd584"
+	],
+	"folders": [],
+	"timestamp": 1468854521972,
+	"owner": 0,
+	"remoteLink": "",
+	"public": false,
+	"published": false,
+	"requests": [
+		{
+			"id": "f6123388-c92c-d3d5-5505-4871f1dcd584",
+			"headers": "Authorization: Basic YWRtaW46QWRtaW4xMjM=\n",
+			"url": "http://uat-platform.openmrs.org:8080/openmrs/ws/rest/v1/concept?q=anemia",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "0bf802ca-fb57-e014-8a22-7c14520ecdb4",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://uat-platform.openmrs.org:8080/openmrs/ws/rest/v1/concept?q=anemia",
+			"description": "Search for a concept",
+			"descriptionFormat": "html",
+			"time": 1468854696482,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
