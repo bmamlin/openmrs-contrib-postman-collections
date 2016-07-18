@@ -1,6 +1,6 @@
 {
 	"id": "77169bff-db8e-fb8b-461f-a6f1ce8f74f6",
-	"name": "Platform-2.0-tests",
+	"name": "platform-2.0-tests",
 	"description": "REST tests for Platform 2.0",
 	"order": [
 		"08c30c96-9174-5e91-9110-2aa6a2fc521d"
@@ -8,9 +8,9 @@
 	"folders": [],
 	"timestamp": 1468854521972,
 	"owner": 0,
+	"remoteLink": "",
 	"public": false,
 	"published": false,
-	"hasRequests": true,
 	"requests": [
 		{
 			"id": "08c30c96-9174-5e91-9110-2aa6a2fc521d",
@@ -22,10 +22,10 @@
 			"data": null,
 			"dataMode": "params",
 			"version": 2,
-			"tests": "tests[\"Body matches string\"] = responseBody.has(\"121629AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\");",
+			"tests": "tests[\"Found UUID for concept\"] = responseBody.has(\"121629AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\");",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1468860704826,
+			"time": 1468861602197,
 			"name": "http://uat-platform.openmrs.org:8080/openmrs/ws/rest/v1/concept?q=anemia",
 			"description": "Search for a concept",
 			"collectionId": "77169bff-db8e-fb8b-461f-a6f1ce8f74f6",
