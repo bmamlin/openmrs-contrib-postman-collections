@@ -81,7 +81,7 @@
 			"method": "POST",
 			"data": [],
 			"dataMode": "raw",
-			"tests": "var jsonData = JSON.parse(responseBody);\ntests[\"name.name == 'Nose Hair Density\"] = jsonData.name.name === 'Nose Hair Density';\ntests[\"datatype.uuid == '8d4a4488-c2cc-11de-8d13-0010c6dffd0f' (Numeric)\"] = jsonData.datatype.uuid === '8d4a4488-c2cc-11de-8d13-0010c6dffd0f';\npostman.setEnvironmentVariable(\"NoseHairDensityUuid\", jsonData.uuid);",
+			"tests": "var jsonData = JSON.parse(responseBody);\ntests[\"name.name == 'Nose Hair Density'\"] = jsonData.name.name === 'Nose Hair Density';\ntests[\"datatype.uuid == '8d4a4488-c2cc-11de-8d13-0010c6dffd0f' (Numeric)\"] = jsonData.datatype.uuid === '8d4a4488-c2cc-11de-8d13-0010c6dffd0f';\npostman.setEnvironmentVariable(\"NoseHairDensityUuid\", jsonData.uuid);",
 			"currentHelper": "normal",
 			"helperAttributes": {},
 			"time": 1468866819528,
